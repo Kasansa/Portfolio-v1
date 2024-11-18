@@ -1,8 +1,8 @@
 import React from'react'
 
-const ProjectCard = ({title,description,image}) => {
+const ProjectCard = ({title,description,image,pageLink}) => {
     return (
-        <div className="card bg-base-100 image-full  shadow-xl pb-4">
+        <div className="card bg-base-100 image-full min-h-96 shadow-xl">
                 <figure>
                     <img
                     src={image}
@@ -17,7 +17,8 @@ const ProjectCard = ({title,description,image}) => {
                     </div>
                     </div>
                     <div className="card-actions justify-end">
-                    <button className="btn btn-primary grayscale">Coming Soon!!!</button>
+                    <button className="btn btn-primary ">
+                        {pageLink}</button>
                     </div>
                 </div>
             </div>
