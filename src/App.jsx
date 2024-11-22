@@ -4,6 +4,7 @@ import TImeline from "./Pages/TImeline"
 import Projects from "./Pages/Projects"
 import { ThemeProvider } from "./Components/ThemeContext"
 import State from "./Components/State"
+import Footer from "./Components/Footer"
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
     <TImeline></TImeline>
     <Projects></Projects>
     <State></State>
+    <Footer></Footer>
    </section>
    </ThemeProvider>
   )

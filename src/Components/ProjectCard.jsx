@@ -17,8 +17,7 @@ const ProjectCard = ({title,description,image,pageLink}) => {
                     </div>
                     </div>
                     <div className="card-actions justify-end">
-                    <button className="btn btn-primary ">
-                        {pageLink}</button>
+                        {pageLink}
                     </div>
                 </div>
             </div>

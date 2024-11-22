@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../Components/Navbar';
 import { ThemeProvider } from '../Components/ThemeContext';
-
+import Footer from '../Components/Footer';
 
 function Contact() {
 
@@ -54,6 +54,7 @@ function Contact() {
         
       </div>
     </div>
+    <Footer className="sticky bottom-0" />
     </ThemeProvider>
     );
   }

@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import CurvedText from "../Components/CurvedText";
+import { ThemeContext } from "../Components/ThemeContext";
 import { Link } from "react-router-dom";
 function Landing() {
-
-const kasansa = document.getElementById("me");
-const width = 500
+const theme  = React.useContext(ThemeContext);
+const skadow = theme === "pastel" ? " shadow-xl shadow-slate-400" : " shadow-md shadow-orange-300";
 
   return (
     <div className="hero bg-base-200 h-screen  flex items-center justify-center p-4">
@@ -13,7 +12,7 @@ const width = 500
         
           <img 
             src="me.png" id='me' 
-            className="w-full h-auto md:m-auto max-w-md md-w-full lg:max-w-lg rounded-full shadow-2xl shadow-orange-400" 
+            className={"w-full h-auto md:m-auto max-w-md md-w-full lg:max-w-lg rounded-full"+skadow}
             alt="Kasansa Kuya wearing a formal suit" 
           />
         </div>
@@ -23,7 +22,7 @@ const width = 500
           <p className="py-8 text-xl lg:text-2xl leading-relaxed">
             I am an engineer with a passion for creating impactful solutions. Currently open to new job opportunities — let’s connect!
           </p>
-          <button  className="btn btn-primary btn-lg mt-6"><Link to="/contact">Contact Me</Link></button>
+          <Link to="/contact"><button  className="btn btn-primary btn-lg mt-6">Contact Me</button></Link>
         </div>
       </div>
     </div>
