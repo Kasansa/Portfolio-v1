@@ -20,10 +20,6 @@ const navLinks = [
     element: <ScrollLink to="projects" smooth={true} duration={500}>
     Projects
   </ScrollLink>
-},
-{
-    location: ["home","dataAnalysisP","mindCharterP"],
-    element: <Link to="/contact">Contact</Link>
 }
 ]
 

@@ -17,7 +17,6 @@ const ProjectCard = ({title,description,image,pageLink}) => {
                     </div>
                     </div>
                     <div className="card-actions justify-end">
-                        {pageLink}
                     </div>
                 </div>
             </div>

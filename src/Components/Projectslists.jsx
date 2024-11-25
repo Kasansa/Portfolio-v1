@@ -4,33 +4,43 @@ import { Link } from "react-router-dom"
 const projects = [ 
   {
     title: "COVID-19 Data Analysis for Africa",
-    description: "An exploratory data analysis of Africa's COVID-19 statistics between 2019 and 2021, using Pandas and Matplotlib",
-    image: "africacovid.jpg",
-    pageLink: <button className="btn btn-primary "><Link to='DataAnalysisProject'>View Project Summary</Link></button>
+    description: "An exploratory data analysis of Africa's COVID-19 statistics between 2019 and 2021, using Python, Pandas, Matplotlib, and Seaborn.",
+    image: "africacovid.jpg"
   },
   {
     title: "Mind Charter Task Tracker",
     description: "A web-based task tracker that integrates HTML, CSS, and JavaScript to manage tasks interactively.",
-    image: "neuralnet.jpg",
-    pageLink: <button className="btn btn-primary "><Link to='ComingSoon'>View Project Summary</Link></button>
+    image: "neuralnet.jpg"
+  },
+  {
+    title: "Nerospec Battery Management System",
+    description: "A automatic battery management system for vehicles. More specifics at https://www.nerospec.com/",
+    image: "neuralnet.jpg"
+  },
+  {
+    title: "Nerospec fuel flow meter",
+    description: "An advanced electromaechanical device capable of measuering the flow of fuel in a vehicle. The device uses a combination of sensors to accurately measure the flow of fuel and provide real-time information on the vehicle's performance and efficiency.",
+    image: "neuralnet.jpg"
+  },
+  {
+    title: "Personal Project :Electrolysis machine",
+    description: "Coming Soon.",
+    image: "neuralnet.jpg"
   },
   {
     title: "Sentiment Analysis Dashboard",
-    description: "A data analysis tool created with Streamlit that performs sentiment analysis on user-provided text data, using natural language processing (NLP) techniques. This dashboard allows users to visualize positive, neutral, and negative sentiment trends over time and across categories, giving users insights into emotional tone and content trends.",
-    image: "data dash.jpg",
-    pageLink: <button className="btn btn-primary "><Link to='ComingSoon'>View Project Summary</Link></button>
+    description: "An interactive sentiment analysis tool developed using Streamlit, designed to process and analyze user-provided text data. By leveraging accessible Natural Language Processing (NLP) tools like TextBlob or VADER, this dashboard identifies positive, neutral, and negative sentiments. Users can explore trends through simple, clear visualizations, gaining insights into emotional tone and content patterns without requiring advanced technical knowledge",
+    image: "data dash.jpg"
   },
   {
     title: "Interactive Portfolio Website",
-    description: "An React, Tailwind, and Vite-powered personal portfolio showcasing web development and data science projects.",
-    image: "vitereact.png",
-    pageLink: <button className="btn btn-primary "><Link to='ComingSoon'>View Project Summary</Link></button>
+    description: "An React, Tailwind, and Vite-powered personal portfolio showcasing my skills and projects.",
+    image: "vitereact.png"
   },
   {
     title: "Data Dashboard with Streamlit",
-    description: "A data visualization dashboard that offers interactive exploration of datasets through graphs, charts, and filters. Built with Python and Streamlit, this tool can be customized to visualize a wide range of datasets, supporting exploratory data analysis for research, education, or general data insights.",
-    image: "https://via.placeholder.com/300x200",
-    pageLink: <button className="btn btn-primary "><Link to='ComingSoon'>View Project Summary</Link></button>
+    description: "A data visualization dashboard to visualise fitness data collected from an individual over a period of time. The dashboard uses Streamlit to create an interactive web application that allows users to explore and analyze the data in a user-friendly way.",
+    image: "neuralnet.jpg"
   }
 ]                            
 

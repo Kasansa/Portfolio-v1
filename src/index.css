@@ -22,3 +22,11 @@
     background-attachment: fixed;
     background-size: cover;
 }
+
+.dark {
+    background-image: url('wall dark.jpg');
+
+}
+.light {
+    background-image: url('wall light.jpg');
+}

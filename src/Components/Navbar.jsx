@@ -8,13 +8,13 @@ function Navbar({pageLinks}) {
     const { theme, toggleTheme } = React.useContext(ThemeContext);
     
     return (
-        <div className="navbar bg-base-100 sticky top-0 z-50">
+        <div className="navbar bg-base-100 sticky top-0 z-50 ">
             
             <div className="flex-1">
                 <Link to="/" id="logo" className="btn btn-ghost normal-case text-xl">Kasansa Kuya Portfolio</Link>
             </div>
             <div className="flex-wrap">
-                <ul className=" text-sm lg:text-base menu menu-horizontal justify-center ">
+                <ul className=" text-sm lg:text-base menu menu-horizontal justify-center w-full">
                 <li className='flex flex-row hover:bg-base-300 m-auto '>
                     <label className="swap swap-rotate">
   {/* this hidden checkbox controls the state */}

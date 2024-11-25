@@ -18,7 +18,7 @@ function Projects() {
       <div>
             <ul className='container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 p-8'>
                 {projects.map((project, index) => {
-                if (!project || !project.title || !project.description || !project.image || !project.pageLink) {
+                if (!project || !project.title || !project.description || !project.image ) {
                     console.error(`Project at index ${index} is missing required properties`)
                     return null
                 }
@@ -29,7 +29,6 @@ function Projects() {
                         title={project.title}
                         description={project.description}
                         image={project.image}
-                        pageLink={project.pageLink}
                     />
                     </li>
                 )

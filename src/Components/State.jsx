@@ -13,9 +13,9 @@ function State() {
 }
 
   return (
-    <div className='h-auto '>
+    <div >
         <button className='btn btn-primary block m-auto text-3xl border-solid-4 border-slate-950 mt-0' onClick={addListItem}>Add Panda</button>
-         <div className='flex flex-row flex-wrap justify-center w-screen p-9'>
+         <div className='flex flex-row flex-wrap justify-center w-screen '>
             {
             state.map((item, index) => (
                 <img className='max-h-32 lg:max-h-80 p-2'src={`panda${index+1}.jpg`}/>))
