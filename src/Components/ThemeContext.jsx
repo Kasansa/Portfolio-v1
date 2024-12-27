@@ -4,7 +4,7 @@ import React, { createContext, useState } from "react";
 export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-    const [theme, setTheme] = useState(localStorage.getItem("theme") || "pastel");
+    const [theme, setTheme] = useState("pastel");
     // Function to toggle theme and set the data-theme attribute
     const toggleTheme = () => {
         const newTheme = theme === "pastel" ? "business" : "pastel";
