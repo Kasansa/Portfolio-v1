@@ -7,7 +7,7 @@ const theme  = React.useContext(ThemeContext);
 
 const [skadow, setSkadow] = useState("");
 
-const[wallTheme, setWallTheme] = useState("");
+const[wallTheme, setWallTheme] = useState("light");
 
 const[textclarity, setTextClarity] = useState("");
 
