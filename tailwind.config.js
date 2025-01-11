@@ -11,7 +11,7 @@ export default {
     require("daisyui"),
   ],
   daisyui: {
-    themes: ["pastel", "business"],
+    themes: ["nord", "business"],
   },
 }
 

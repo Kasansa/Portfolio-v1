@@ -29,6 +29,7 @@ function Projects() {
                         title={project.title}
                         description={project.description}
                         image={project.image}
+                        pageLink={project.url}
                     />
                     </li>
                 )
