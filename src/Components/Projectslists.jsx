@@ -1,55 +1,52 @@
-import React from "react"
-import { Link } from "react-router-dom"
-
-const projects = [ 
+const projects = [
   {
-    title: "ObaEditor: an open source image editor",
-    description: "An interactive image editor built with React and Tailwind CSS. Users are able to add text and shape elements to an image. Users can also save and share the edited image.",
+    number: "01",
+    title: "Acoustic machine-health sensor",
+    category: "Condition monitoring · Sensor integration",
+    description: "An acoustic condition-monitoring system developed to assess machine health through vibration and acoustic signatures, supporting predictive maintenance and equipment reliability.",
+    contribution: "Sensor integration, enclosure design, prototyping, testing and technical documentation",
+    image: "neuralnet.jpg",
+  },
+  {
+    number: "02",
+    title: "Fuel-flow measurement system",
+    category: "Mining technology · Harsh-environment design",
+    description: "A durable fuel-flow monitoring device for mining environments, using Hall-effect sensing to generate reliable pulse signals for the main control system.",
+    contribution: "Mechanical packaging, IP67-oriented design, component integration and prototype refinement",
+    image: "data dash.jpg",
+  },
+  {
+    number: "03",
+    title: "Underground teleremote controller",
+    category: "Mining systems · Electromechanical integration",
+    description: "A robust surface-station control system for operating underground mining machinery, integrating mechanical systems with electronics, radio, firmware and computing hardware.",
+    contribution: "Enclosure design, component mounting, interface packaging and multidisciplinary integration",
     image: "Obaeditor.png",
-    url:'https://github.com/Kasansa/ObaEditor'
   },
   {
-    title: "Interactive Portfolio Website",
-    description: "An React, Tailwind, and Vite-powered personal portfolio showcasing my skills and projects.",
-    image: "vitereact.png",
-    url:'https://github.com/Kasansa/Portfolio-v1'
-  },{
-    title: "Notefloat windows app",
-    description: "An React, Tailwind powered note taking app built with electron.",
+    number: "04",
+    title: "Portable personnel training system",
+    category: "Product development · Technical training",
+    description: "A portable demonstration platform that makes machine-intervention and monitoring technologies tangible for customers, training sessions and internal knowledge transfer.",
+    contribution: "Mechanical layouts, enclosure concepts, component integration and supporting documentation",
     image: "notefloat.png",
-    url:'https://github.com/Kasansa/notefloat'
   },
   {
-    title: "COVID-19 Data Analysis for Africa",
-    description: "An exploratory data analysis of Africa's COVID-19 statistics between 2019 and 2021, using Python, Pandas, Matplotlib, and Seaborn.",
+    number: "05",
+    title: "Hydrogen pressure monitoring",
+    category: "Industrial sensing · Validation",
+    description: "A pressure-transducer-based monitoring solution developed around safety, reliability and manufacturability requirements for hydrogen-system applications.",
+    contribution: "Component selection, mechanical integration, testing and documentation",
+    image: "covid splash.jpg",
+  },
+  {
+    number: "06",
+    title: "IoT facility-monitoring platform",
+    category: "Industrial IoT · Product prototyping",
+    description: "A facility-management platform integrating occupancy, door-activation and consumable-usage monitoring to improve visibility into public-space operations.",
+    contribution: "Hardware integration, prototype development, testing and technical documentation",
     image: "africacovid.jpg",
-    url:''
   },
-  {
-    title: "Mind Charter Task Tracker",
-    description: "A web-based task tracker that integrates HTML, CSS, and JavaScript to manage tasks interactively.",
-    image: "neuralnet.jpg",
-    url:''
-  },
-  {
-    title: "Nerospec Battery Management System",
-    description: "A automatic battery management system for vehicles. More specifics at https://www.nerospec.com/",
-    image: "neuralnet.jpg",
-    url:''
-  },
-  {
-    title: "Nerospec fuel flow meter",
-    description: "An advanced electromaechanical device capable of measuering the flow of fuel in a vehicle. The device uses a combination of sensors to accurately measure the flow of fuel and provide real-time information on the vehicle's performance and efficiency.",
-    image: "neuralnet.jpg",
-    url:''
-  },
-  {
-    title: "Data Dashboard with Streamlit",
-    description: "A data visualization dashboard to visualise fitness data collected from an individual over a period of time. The dashboard uses Streamlit to create an interactive web application that allows users to explore and analyze the data in a user-friendly way.",
-    image: "neuralnet.jpg",
-    url:''
-  }
-]                            
+];
 
-
-export {projects} 
+export { projects };
