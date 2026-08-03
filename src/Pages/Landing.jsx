@@ -18,7 +18,6 @@ function Landing() {
             </p>
             <div className="hero-actions">
               <a className="button button--primary" href="#work">Explore my work <span>↘</span></a>
-              <a className="button button--secondary" href="Kasansa_Kuya_CV.pdf" target="_blank" rel="noreferrer">Download CV</a>
             </div>
           </div>
           <div className="portrait-wrap">
