@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const ProjectCard = ({ project }) => (
   <article className="project-card">
-    <div className="project-image">
+    <div className={`project-image ${project.sketch ? "project-image--sketch" : ""}`}>
       <img src={project.image} alt="" />
       <span>{project.number}</span>
     </div>
@@ -23,6 +23,7 @@ ProjectCard.propTypes = {
     description: PropTypes.string.isRequired,
     contribution: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
+    sketch: PropTypes.bool,
   }).isRequired,
 };
 

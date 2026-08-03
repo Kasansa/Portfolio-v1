@@ -27,13 +27,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
   display: flex; align-items: center; justify-content: space-between; transition: .25s ease;
 }
 .topbar--scrolled { background: rgba(244, 241, 233, .92); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
-.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; font-weight: 700; }
+.brand { display: flex; align-items: center; gap: 12px; padding: 0; border: 0; background: transparent; color: inherit; cursor: pointer; text-decoration: none; font: inherit; font-weight: 700; }
 .brand-mark { display: grid; place-items: center; width: 38px; height: 38px; border: 1px solid var(--ink); border-radius: 50%; font: 500 12px "DM Mono"; }
 .brand-name { font-size: 14px; letter-spacing: -.02em; }
 .nav-links { display: flex; align-items: center; gap: clamp(22px, 3vw, 44px); }
-.nav-links a { position: relative; text-decoration: none; font: 500 12px "DM Mono"; text-transform: uppercase; letter-spacing: .08em; }
-.nav-links a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: -5px; height: 1px; background: var(--ink); transition: .25s; }
-.nav-links a:hover::after { right: 0; }
+.nav-links button { position: relative; padding: 0; border: 0; background: transparent; color: inherit; cursor: pointer; text-decoration: none; font: 500 12px "DM Mono"; text-transform: uppercase; letter-spacing: .08em; }
+.nav-links button::after { content: ""; position: absolute; left: 0; right: 100%; bottom: -5px; height: 1px; background: var(--ink); transition: .25s; }
+.nav-links button:hover::after { right: 0; }
 .menu-toggle { display: none; border: 0; background: none; padding: 8px; }
 .menu-toggle span { display: block; width: 24px; height: 1px; margin: 6px 0; background: var(--ink); }
 
@@ -103,6 +103,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .project-image::after { content: ""; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(14,29,22,.18), rgba(197,238,90,.12)); mix-blend-mode: multiply; }
 .project-image img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.1); transition: .5s ease; }
 .project-card:hover img { transform: scale(1.035); filter: grayscale(.25); }
+.project-image--sketch { background: #dfe1d5; }
+.project-image--sketch::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(rgba(23,33,29,.055) 1px, transparent 1px), linear-gradient(90deg, rgba(23,33,29,.055) 1px, transparent 1px); background-size: 24px 24px; }
+.project-image--sketch img { position: relative; z-index: 1; object-fit: contain; padding: 16px 22px 8px; filter: grayscale(.15) contrast(1.04); }
+.project-card:hover .project-image--sketch img { filter: grayscale(0) contrast(1.04); }
 .project-image span { position: absolute; z-index: 2; top: 18px; left: 18px; display: grid; place-items: center; width: 42px; height: 42px; background: var(--lime); border-radius: 50%; font: 500 11px "DM Mono"; }
 .project-body { padding: 34px; }
 .project-category { margin: 0 0 15px; color: var(--muted); font: 500 10px "DM Mono"; text-transform: uppercase; letter-spacing: .07em; }
@@ -119,14 +123,14 @@ footer h2 { max-width: 900px; margin: 35px 0 25px; font-size: clamp(45px, 7vw, 1
 .footer-email span { color: var(--lime); }
 .footer-bottom { margin-top: 110px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,.2); display: flex; justify-content: space-between; color: #919c96; font: 400 10px "DM Mono"; text-transform: uppercase; letter-spacing: .07em; }
 .footer-bottom div { display: flex; gap: 30px; }
-.footer-bottom a { text-decoration: none; }
-.footer-bottom a:hover { color: var(--lime); }
+.footer-bottom a, .footer-bottom button { padding: 0; border: 0; background: transparent; color: inherit; cursor: pointer; text-decoration: none; font: inherit; text-transform: inherit; letter-spacing: inherit; }
+.footer-bottom a:hover, .footer-bottom button:hover { color: var(--lime); }
 
 @media (max-width: 900px) {
   .menu-toggle { display: block; z-index: 2; }
   .nav-links { position: fixed; inset: 0; display: none; padding: 110px 30px; background: var(--paper); flex-direction: column; align-items: flex-start; gap: 28px; }
   .nav-links--open { display: flex; }
-  .nav-links a { font-size: 22px; }
+  .nav-links button { font-size: 22px; }
   .hero { padding-top: 110px; }
   .hero-grid { grid-template-columns: 1fr; }
   .portrait-wrap { margin: 0 auto; width: 80%; }

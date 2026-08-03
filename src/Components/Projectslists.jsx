@@ -5,7 +5,8 @@ const projects = [
     category: "Mining technology · Harsh-environment design",
     description: "A durable fuel-flow monitoring device for mining environments, using Hall-effect sensing to generate reliable pulse signals for the main control system.",
     contribution: "Mechanical packaging, IP67-oriented design, component integration and prototype refinement",
-    image: "data dash.jpg",
+    image: "illustrations/fuel-flow-sketch.png",
+    sketch: true,
   },
   {
     number: "02",
@@ -13,7 +14,8 @@ const projects = [
     category: "Mining systems · Electromechanical integration",
     description: "A robust surface-station control system for operating underground mining machinery, integrating mechanical systems with electronics, radio, firmware and computing hardware.",
     contribution: "Enclosure design, component mounting, interface packaging and multidisciplinary integration",
-    image: "Obaeditor.png",
+    image: "illustrations/teleremote-sketch.png",
+    sketch: true,
   },
   {
     number: "03",
@@ -21,7 +23,8 @@ const projects = [
     category: "Mining communications · Mechanical packaging",
     description: "An underground communication system enabling surface-level management to connect with teams working below ground.",
     contribution: "Mechanical packaging, equipment mounting and integration of display, camera, computer and speaker components",
-    image: "neuralnet.jpg",
+    image: "illustrations/conferencing-unit-sketch.png",
+    sketch: true,
   },
   {
     number: "04",
@@ -29,7 +32,8 @@ const projects = [
     category: "Mining equipment · Design for manufacture",
     description: "An industrial battery enclosure developed for mining-vehicle use, with design revisions focused on production readiness and practical manufacturing constraints.",
     contribution: "Component redesign, manufacturing documentation, supplier coordination and cost-conscious design refinement",
-    image: "covid splash.jpg",
+    image: "illustrations/battery-enclosure-sketch.png",
+    sketch: true,
   },
   {
     number: "05",

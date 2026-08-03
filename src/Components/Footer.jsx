@@ -1,4 +1,6 @@
 function Footer() {
+  const backToTop = () => document.getElementById("top")?.scrollIntoView({ behavior: "smooth" });
+
   return (
     <footer id="contact">
       <div className="footer-kicker">Let’s build something useful.</div>
@@ -9,7 +11,7 @@ function Footer() {
         <div>
           <a href="https://www.linkedin.com/in/kasansa-k-29a438134/" target="_blank" rel="noreferrer">LinkedIn</a>
           <a href="https://github.com/Kasansa" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="#top">Back to top ↑</a>
+          <button type="button" onClick={backToTop}>Back to top ↑</button>
         </div>
       </div>
     </footer>

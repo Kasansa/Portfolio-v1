@@ -6,6 +6,8 @@ const capabilities = [
 ];
 
 function Landing() {
+  const scrollToWork = () => document.getElementById("work")?.scrollIntoView({ behavior: "smooth" });
+
   return (
     <>
       <section className="hero" id="top">
@@ -17,13 +19,13 @@ function Landing() {
               industrial monitoring systems, and the journey from concept to tested prototype.
             </p>
             <div className="hero-actions">
-              <a className="button button--primary" href="#work">Explore my work <span>↘</span></a>
+              <button className="button button--primary" type="button" onClick={scrollToWork}>Explore my work <span>↘</span></button>
             </div>
           </div>
           <div className="portrait-wrap">
             <div className="portrait-index">01 — PROFILE</div>
             <div className="portrait-frame">
-              <img src="me.png" alt="Kasansa Kuya" />
+              <img src="portrait-sketch.png" alt="Pencil portrait of Kasansa Kuya" />
             </div>
             <div className="portrait-note">Mechanical engineer<br />Product designer</div>
           </div>
